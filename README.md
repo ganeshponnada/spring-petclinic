@@ -34,7 +34,7 @@ This project demonstrates a complete CI/CD pipeline for the [Spring PetClinic](h
 
 ---
 
-## 📁 Project Structure (Optional)
+## 📁 Project Structure 
 
 ├── Jenkinsfile
 ├── Dockerfile (basic)
