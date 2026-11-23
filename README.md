@@ -78,6 +78,6 @@ Edit
 Apache 2.0 – inherited from the original Spring PetClinic repo.
 
 checking if poll SCM trigger automatically executes the build
-added
+added extra 
 
 webhook trigger
