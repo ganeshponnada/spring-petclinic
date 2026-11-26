@@ -1,5 +1,11 @@
+
 pipeline {
     agent any
+
+    tools {
+        jdk 'JDK17'
+        maven 'Maven3'
+    }
 
     stages {
         stage('Checkout') {
@@ -25,6 +31,12 @@ pipeline {
             steps {
                 sh 'mvn package'
             }
+        }
+    }
+
+    post {
+        success {
+            archiveArtifacts artifacts: 'target/*.jar', fingerprint: true
         }
     }
 }
